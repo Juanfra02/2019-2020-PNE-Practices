@@ -4,7 +4,7 @@ import pathlib
 
 # -- Server network parameters
 IP = "127.0.0.1"
-PORT = 8080
+PORT = 9090
 HTML_ASSETS = "./html/"
 def read_html_file(filename):
     content = pathlib.Path(filename).read_text()
@@ -14,7 +14,7 @@ def get_resource(path):
     resp = ""
 
     if path == "/info/A":
-        resp = Path("A.html").read_text()
+        resp = path("A.html").read_text()
 
     return resp
 
@@ -32,8 +32,9 @@ def process_client(s):
     # -- The request line is the first
     req_line = lines[0]
     path_name = req_line.split(' ')[1]
-    print("Resource requested: ", req_line)
-    termcolor.cprint(req_line,"green")
+    print('Resource requested: ', req_line)
+    print("Request line: ", end="")
+    termcolor.cprint(req_line, "green")
 
     # -- Generate the response message
     #It has the following lines
