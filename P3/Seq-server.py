@@ -1,6 +1,6 @@
 import socket
-import server_utils
-
+import Server_utils as su
+import termcolor
 list_sequences = ['ACCGTGGTGTAACGAAA', 'ATTTGCTGTCTCT', 'CTCTCTCGAGAGAG', 'TACTCGGCCG', 'CGCGTAGGGATGACGTAGC']
 
 ls = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -33,7 +33,7 @@ while True:
 
     msg_raw = cs.recv(2048)
     msg = msg_raw.decode()
-    formatted_msg = server_utils.format_command(msg)
+    formatted_msg = su.format_command(msg)
     #print(formatted_msg)
     formatted_msg = formatted_msg.split(' ')
 
@@ -44,17 +44,17 @@ while True:
         argument = formatted_msg[1]
 
     if command == 'PING':
-        server_utils.ping(cs)
+        su.ping(cs)
     elif command == 'GET':
-        server_utils.get(cs, list_sequences, argument)
+        su.get(cs, list_sequences, argument)
     elif command == 'INFO':
-        server_utils.info(cs, argument)
+        su.info(cs, argument)
     elif command == 'COMP':
-        server_utils.comp(cs, argument)
+        su.comp(cs, argument)
     elif command == 'REV':
-        server_utils.rev(cs, argument)
+        su.rev(cs, argument)
     elif command == 'GENE':
-        server_utils.gene(cs, argument)
+        su.gene(cs, argument)
     else:
         response = 'Not available command.'
         cs.send(str(response).encode())
