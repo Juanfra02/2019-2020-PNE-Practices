@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Index</title>
+  </head>
+  <body style="background-color: lightblue">
+    <h1> Browsing Human and Vertebrates genome </h1>
+    <h2> BASIC LEVEL SERVICES </h2>
+    <p> 1)List of species in the genome database</p>
+    <form action ="listSpecies" method="get">
+        Limit:  <input type="number" name="limit"> <br> <br>
+        <input type="submit" value="send">
+    </form>
+    <p> 2)Information about the karyotype</p>
+    <form action ="karyotype" method="get">
+        Select the species:  <input type="Text" name="species_name"> <br> <br>
+        <input type="submit" value="send">
+    </form>
+    <p> 3)Chromosome length</p>
+    <form action ="chromosomeLength" method="get">
+        Select the species:  <input type="Text" name="species_name"> <br> <br>
+        Select a chromosome: <input type="Text" name="chromosome_name"> <br> <br>
+        <input type="submit" value="send">
+    </form>
+    <h2> MEDIUM LEVEL SERVICES </h2>
+    <p>4)Gene sequence <p>
+    <form action ="geneSeq" method="get">
+        Select the gene: <input type="Text" name="gene"> <br> <br>
+        <input type="submit" value="send">
+    </form>
+    <p>5) Gene info</p>
+    <form action ="geneInfo" method="get">
+        Select the gene: <input type="Text" name="gene"> <br> <br>
+        <input type="submit" value="send">
+    </form>
+    <p>6) Gene length and percentage bases calculation</p>
+    <form action ="geneCalc" method="get">
+        Select the gene: <input type="Text" name="gene"> <br> <br>
+        <input type="submit" value="send">
+    </form>
+
+
+
+
+
