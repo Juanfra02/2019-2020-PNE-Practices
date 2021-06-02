@@ -1,0 +1,1484 @@
+Basic Report
+Test 1 :
+-Input: http://127.0.0.1:8080/listSpecies?limit=5
+-Output:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Species List</title>
+</head>
+<body style="background-color: peachpuff">
+  <p> The total number of species in the ensembl is : 310</p>
+  <p> You have selected the limit: 5</p>
+  <p>The names of the species are :</p>
+  <tbody>
+
+      <ul>
+        <li>apteryx_owenii</li>
+      </ul>
+
+      <ul>
+        <li>parambassis_ranga</li>
+      </ul>
+
+      <ul>
+        <li>cyanistes_caeruleus</li>
+      </ul>
+
+      <ul>
+        <li>monodon_monoceros</li>
+      </ul>
+
+      <ul>
+        <li>castor_canadensis</li>
+      </ul>
+
+</body>
+</html>
+Test 2:
+-Input: http://127.0.0.1:8080/listSpecies?limit=600
+-Output:
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ERROR</title>
+  </head>
+  <body style="background-color: red;">
+    <h1>ERROR</h1>
+    <p>Resource not available</p>
+    <a href="/">Main Page</a>
+  </body>
+</html>
+Test 3 :
+-Input :http://127.0.0.1:8080/listSpecies?limit=
+-Output :
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Species List</title>
+</head>
+<body style="background-color: peachpuff">
+  <p> The total number of species in the ensembl is : 310</p>
+  <p> You have selected no limit</p>
+  <p>The names of the species are :</p>
+  <tbody>
+
+      <ul>
+        <li>apteryx_owenii</li>
+      </ul>
+
+      <ul>
+        <li>parambassis_ranga</li>
+      </ul>
+
+      <ul>
+        <li>cyanistes_caeruleus</li>
+      </ul>
+
+      <ul>
+        <li>monodon_monoceros</li>
+      </ul>
+
+      <ul>
+        <li>castor_canadensis</li>
+      </ul>
+
+      <ul>
+        <li>cyclopterus_lumpus</li>
+      </ul>
+
+      <ul>
+        <li>cricetulus_griseus_chok1gshd</li>
+      </ul>
+
+      <ul>
+        <li>cottoperca_gobio</li>
+      </ul>
+
+      <ul>
+        <li>mesocricetus_auratus</li>
+      </ul>
+
+      <ul>
+        <li>bos_mutus</li>
+      </ul>
+
+      <ul>
+        <li>betta_splendens</li>
+      </ul>
+
+      <ul>
+        <li>astatotilapia_calliptera</li>
+      </ul>
+
+      <ul>
+        <li>procavia_capensis</li>
+      </ul>
+
+      <ul>
+        <li>bubo_bubo</li>
+      </ul>
+
+      <ul>
+        <li>coturnix_japonica</li>
+      </ul>
+
+      <ul>
+        <li>takifugu_rubripes</li>
+      </ul>
+
+      <ul>
+        <li>scleropages_formosus</li>
+      </ul>
+
+      <ul>
+        <li>laticauda_laticaudata</li>
+      </ul>
+
+      <ul>
+        <li>mus_musculus_cbaj</li>
+      </ul>
+
+      <ul>
+        <li>gopherus_agassizii</li>
+      </ul>
+
+      <ul>
+        <li>neolamprologus_brichardi</li>
+      </ul>
+
+      <ul>
+        <li>oncorhynchus_kisutch</li>
+      </ul>
+
+      <ul>
+        <li>otus_sunia</li>
+      </ul>
+
+      <ul>
+        <li>maylandia_zebra</li>
+      </ul>
+
+      <ul>
+        <li>urocitellus_parryii</li>
+      </ul>
+
+      <ul>
+        <li>amphiprion_ocellaris</li>
+      </ul>
+
+      <ul>
+        <li>phascolarctos_cinereus</li>
+      </ul>
+
+      <ul>
+        <li>mus_spretus</li>
+      </ul>
+
+      <ul>
+        <li>ovis_aries</li>
+      </ul>
+
+      <ul>
+        <li>mus_musculus_c3hhej</li>
+      </ul>
+
+      <ul>
+        <li>canis_lupus_familiaris</li>
+      </ul>
+
+      <ul>
+        <li>calidris_pygmaea</li>
+      </ul>
+
+      <ul>
+        <li>peromyscus_maniculatus_bairdii</li>
+      </ul>
+
+      <ul>
+        <li>athene_cunicularia</li>
+      </ul>
+
+      <ul>
+        <li>saccharomyces_cerevisiae</li>
+      </ul>
+
+      <ul>
+        <li>lepisosteus_oculatus</li>
+      </ul>
+
+      <ul>
+        <li>mus_spicilegus</li>
+      </ul>
+
+      <ul>
+        <li>lynx_canadensis</li>
+      </ul>
+
+      <ul>
+        <li>ursus_maritimus</li>
+      </ul>
+
+      <ul>
+        <li>poecilia_formosa</li>
+      </ul>
+
+      <ul>
+        <li>cynoglossus_semilaevis</li>
+      </ul>
+
+      <ul>
+        <li>ornithorhynchus_anatinus</li>
+      </ul>
+
+      <ul>
+        <li>chelydra_serpentina</li>
+      </ul>
+
+      <ul>
+        <li>chrysemys_picta_bellii</li>
+      </ul>
+
+      <ul>
+        <li>monodelphis_domestica</li>
+      </ul>
+
+      <ul>
+        <li>rhinopithecus_roxellana</li>
+      </ul>
+
+      <ul>
+        <li>numida_meleagris</li>
+      </ul>
+
+      <ul>
+        <li>sinocyclocheilus_grahami</li>
+      </ul>
+
+      <ul>
+        <li>ciona_savignyi</li>
+      </ul>
+
+      <ul>
+        <li>gorilla_gorilla</li>
+      </ul>
+
+      <ul>
+        <li>esox_lucius</li>
+      </ul>
+
+      <ul>
+        <li>monopterus_albus</li>
+      </ul>
+
+      <ul>
+        <li>pavo_cristatus</li>
+      </ul>
+
+      <ul>
+        <li>lates_calcarifer</li>
+      </ul>
+
+      <ul>
+        <li>suricata_suricatta</li>
+      </ul>
+
+      <ul>
+        <li>oryzias_sinensis</li>
+      </ul>
+
+      <ul>
+        <li>sus_scrofa_wuzhishan</li>
+      </ul>
+
+      <ul>
+        <li>pundamilia_nyererei</li>
+      </ul>
+
+      <ul>
+        <li>erpetoichthys_calabaricus</li>
+      </ul>
+
+      <ul>
+        <li>mus_caroli</li>
+      </ul>
+
+      <ul>
+        <li>vulpes_vulpes</li>
+      </ul>
+
+      <ul>
+        <li>notamacropus_eugenii</li>
+      </ul>
+
+      <ul>
+        <li>pogona_vitticeps</li>
+      </ul>
+
+      <ul>
+        <li>phocoena_sinus</li>
+      </ul>
+
+      <ul>
+        <li>cebus_capucinus</li>
+      </ul>
+
+      <ul>
+        <li>vicugna_pacos</li>
+      </ul>
+
+      <ul>
+        <li>echinops_telfairi</li>
+      </ul>
+
+      <ul>
+        <li>colobus_angolensis_palliatus</li>
+      </ul>
+
+      <ul>
+        <li>macaca_nemestrina</li>
+      </ul>
+
+      <ul>
+        <li>bos_taurus</li>
+      </ul>
+
+      <ul>
+        <li>sphaeramia_orbicularis</li>
+      </ul>
+
+      <ul>
+        <li>anas_zonorhyncha</li>
+      </ul>
+
+      <ul>
+        <li>cyprinus_carpio_hebaored</li>
+      </ul>
+
+      <ul>
+        <li>seriola_lalandi_dorsalis</li>
+      </ul>
+
+      <ul>
+        <li>cavia_aperea</li>
+      </ul>
+
+      <ul>
+        <li>astyanax_mexicanus</li>
+      </ul>
+
+      <ul>
+        <li>calidris_pugnax</li>
+      </ul>
+
+      <ul>
+        <li>bos_grunniens</li>
+      </ul>
+
+      <ul>
+        <li>taeniopygia_guttata</li>
+      </ul>
+
+      <ul>
+        <li>rhinopithecus_bieti</li>
+      </ul>
+
+      <ul>
+        <li>lonchura_striata_domestica</li>
+      </ul>
+
+      <ul>
+        <li>fukomys_damarensis</li>
+      </ul>
+
+      <ul>
+        <li>oryzias_latipes</li>
+      </ul>
+
+      <ul>
+        <li>melopsittacus_undulatus</li>
+      </ul>
+
+      <ul>
+        <li>carlito_syrichta</li>
+      </ul>
+
+      <ul>
+        <li>catagonus_wagneri</li>
+      </ul>
+
+      <ul>
+        <li>xiphophorus_maculatus</li>
+      </ul>
+
+      <ul>
+        <li>anas_platyrhynchos_platyrhynchos</li>
+      </ul>
+
+      <ul>
+        <li>catharus_ustulatus</li>
+      </ul>
+
+      <ul>
+        <li>callorhinchus_milii</li>
+      </ul>
+
+      <ul>
+        <li>nothobranchius_furzeri</li>
+      </ul>
+
+      <ul>
+        <li>sus_scrofa_usmarc</li>
+      </ul>
+
+      <ul>
+        <li>piliocolobus_tephrosceles</li>
+      </ul>
+
+      <ul>
+        <li>sus_scrofa_tibetan</li>
+      </ul>
+
+      <ul>
+        <li>panthera_leo</li>
+      </ul>
+
+      <ul>
+        <li>jaculus_jaculus</li>
+      </ul>
+
+      <ul>
+        <li>gasterosteus_aculeatus</li>
+      </ul>
+
+      <ul>
+        <li>cavia_porcellus</li>
+      </ul>
+
+      <ul>
+        <li>canis_lupus_dingo</li>
+      </ul>
+
+      <ul>
+        <li>spermophilus_dauricus</li>
+      </ul>
+
+      <ul>
+        <li>canis_lupus_familiarisbasenji</li>
+      </ul>
+
+      <ul>
+        <li>terrapene_carolina_triunguis</li>
+      </ul>
+
+      <ul>
+        <li>sarcophilus_harrisii</li>
+      </ul>
+
+      <ul>
+        <li>moschus_moschiferus</li>
+      </ul>
+
+      <ul>
+        <li>sus_scrofa_largewhite</li>
+      </ul>
+
+      <ul>
+        <li>mus_musculus_aj</li>
+      </ul>
+
+      <ul>
+        <li>oryzias_melastigma</li>
+      </ul>
+
+      <ul>
+        <li>mus_musculus_casteij</li>
+      </ul>
+
+      <ul>
+        <li>felis_catus</li>
+      </ul>
+
+      <ul>
+        <li>cricetulus_griseus_crigri</li>
+      </ul>
+
+      <ul>
+        <li>rattus_norvegicus</li>
+      </ul>
+
+      <ul>
+        <li>marmota_marmota_marmota</li>
+      </ul>
+
+      <ul>
+        <li>capra_hircus</li>
+      </ul>
+
+      <ul>
+        <li>geospiza_fortis</li>
+      </ul>
+
+      <ul>
+        <li>mus_pahari</li>
+      </ul>
+
+      <ul>
+        <li>pteropus_vampyrus</li>
+      </ul>
+
+      <ul>
+        <li>pongo_abelii</li>
+      </ul>
+
+      <ul>
+        <li>salmo_salar</li>
+      </ul>
+
+      <ul>
+        <li>cercocebus_atys</li>
+      </ul>
+
+      <ul>
+        <li>gallus_gallus</li>
+      </ul>
+
+      <ul>
+        <li>anolis_carolinensis</li>
+      </ul>
+
+      <ul>
+        <li>salvator_merianae</li>
+      </ul>
+
+      <ul>
+        <li>octodon_degus</li>
+      </ul>
+
+      <ul>
+        <li>naja_naja</li>
+      </ul>
+
+      <ul>
+        <li>mandrillus_leucophaeus</li>
+      </ul>
+
+      <ul>
+        <li>caenorhabditis_elegans</li>
+      </ul>
+
+      <ul>
+        <li>callithrix_jacchus</li>
+      </ul>
+
+      <ul>
+        <li>gopherus_evgoodei</li>
+      </ul>
+
+      <ul>
+        <li>stachyris_ruficeps</li>
+      </ul>
+
+      <ul>
+        <li>anser_brachyrhynchus</li>
+      </ul>
+
+      <ul>
+        <li>sus_scrofa_landrace</li>
+      </ul>
+
+      <ul>
+        <li>nannospalax_galili</li>
+      </ul>
+
+      <ul>
+        <li>stegastes_partitus</li>
+      </ul>
+
+      <ul>
+        <li>echeneis_naucrates</li>
+      </ul>
+
+      <ul>
+        <li>propithecus_coquereli</li>
+      </ul>
+
+      <ul>
+        <li>tursiops_truncatus</li>
+      </ul>
+
+      <ul>
+        <li>mus_musculus_lpj</li>
+      </ul>
+
+      <ul>
+        <li>tupaia_belangeri</li>
+      </ul>
+
+      <ul>
+        <li>clupea_harengus</li>
+      </ul>
+
+      <ul>
+        <li>rhinolophus_ferrumequinum</li>
+      </ul>
+
+      <ul>
+        <li>erythrura_gouldiae</li>
+      </ul>
+
+      <ul>
+        <li>ciona_intestinalis</li>
+      </ul>
+
+      <ul>
+        <li>oreochromis_aureus</li>
+      </ul>
+
+      <ul>
+        <li>xenopus_tropicalis</li>
+      </ul>
+
+      <ul>
+        <li>zalophus_californianus</li>
+      </ul>
+
+      <ul>
+        <li>canis_lupus_familiarisgreatdane</li>
+      </ul>
+
+      <ul>
+        <li>cairina_moschata_domestica</li>
+      </ul>
+
+      <ul>
+        <li>mus_musculus_nodshiltj</li>
+      </ul>
+
+      <ul>
+        <li>capra_hircus_blackbengal</li>
+      </ul>
+
+      <ul>
+        <li>homo_sapiens</li>
+      </ul>
+
+      <ul>
+        <li>apteryx_haastii</li>
+      </ul>
+
+      <ul>
+        <li>mola_mola</li>
+      </ul>
+
+      <ul>
+        <li>saimiri_boliviensis_boliviensis</li>
+      </ul>
+
+      <ul>
+        <li>oncorhynchus_tshawytscha</li>
+      </ul>
+
+      <ul>
+        <li>mastacembelus_armatus</li>
+      </ul>
+
+      <ul>
+        <li>heterocephalus_glaber_female</li>
+      </ul>
+
+      <ul>
+        <li>meleagris_gallopavo</li>
+      </ul>
+
+      <ul>
+        <li>dasypus_novemcinctus</li>
+      </ul>
+
+      <ul>
+        <li>paramormyrops_kingsleyae</li>
+      </ul>
+
+      <ul>
+        <li>poecilia_reticulata</li>
+      </ul>
+
+      <ul>
+        <li>petromyzon_marinus</li>
+      </ul>
+
+      <ul>
+        <li>bos_indicus_hybrid</li>
+      </ul>
+
+      <ul>
+        <li>choloepus_hoffmanni</li>
+      </ul>
+
+      <ul>
+        <li>hucho_hucho</li>
+      </ul>
+
+      <ul>
+        <li>oncorhynchus_mykiss</li>
+      </ul>
+
+      <ul>
+        <li>larimichthys_crocea</li>
+      </ul>
+
+      <ul>
+        <li>ursus_thibetanus_thibetanus</li>
+      </ul>
+
+      <ul>
+        <li>sus_scrofa_pietrain</li>
+      </ul>
+
+      <ul>
+        <li>lepidothrix_coronata</li>
+      </ul>
+
+      <ul>
+        <li>oryzias_javanicus</li>
+      </ul>
+
+      <ul>
+        <li>anser_cygnoides</li>
+      </ul>
+
+      <ul>
+        <li>gouania_willdenowi</li>
+      </ul>
+
+      <ul>
+        <li>struthio_camelus_australis</li>
+      </ul>
+
+      <ul>
+        <li>cyprinus_carpio</li>
+      </ul>
+
+      <ul>
+        <li>scophthalmus_maximus</li>
+      </ul>
+
+      <ul>
+        <li>erinaceus_europaeus</li>
+      </ul>
+
+      <ul>
+        <li>papio_anubis</li>
+      </ul>
+
+      <ul>
+        <li>gambusia_affinis</li>
+      </ul>
+
+      <ul>
+        <li>chinchilla_lanigera</li>
+      </ul>
+
+      <ul>
+        <li>eptatretus_burgeri</li>
+      </ul>
+
+      <ul>
+        <li>macaca_mulatta</li>
+      </ul>
+
+      <ul>
+        <li>microtus_ochrogaster</li>
+      </ul>
+
+      <ul>
+        <li>gadus_morhua</li>
+      </ul>
+
+      <ul>
+        <li>myotis_lucifugus</li>
+      </ul>
+
+      <ul>
+        <li>sander_lucioperca</li>
+      </ul>
+
+      <ul>
+        <li>amphilophus_citrinellus</li>
+      </ul>
+
+      <ul>
+        <li>microcebus_murinus</li>
+      </ul>
+
+      <ul>
+        <li>delphinapterus_leucas</li>
+      </ul>
+
+      <ul>
+        <li>mus_musculus_akrj</li>
+      </ul>
+
+      <ul>
+        <li>junco_hyemalis</li>
+      </ul>
+
+      <ul>
+        <li>mustela_putorius_furo</li>
+      </ul>
+
+      <ul>
+        <li>sinocyclocheilus_anshuiensis</li>
+      </ul>
+
+      <ul>
+        <li>dromaius_novaehollandiae</li>
+      </ul>
+
+      <ul>
+        <li>ficedula_albicollis</li>
+      </ul>
+
+      <ul>
+        <li>aotus_nancymaae</li>
+      </ul>
+
+      <ul>
+        <li>anas_platyrhynchos</li>
+      </ul>
+
+      <ul>
+        <li>zosterops_lateralis_melanops</li>
+      </ul>
+
+      <ul>
+        <li>pseudonaja_textilis</li>
+      </ul>
+
+      <ul>
+        <li>panthera_tigris_altaica</li>
+      </ul>
+
+      <ul>
+        <li>sus_scrofa_hampshire</li>
+      </ul>
+
+      <ul>
+        <li>serinus_canaria</li>
+      </ul>
+
+      <ul>
+        <li>hippocampus_comes</li>
+      </ul>
+
+      <ul>
+        <li>mus_musculus_pwkphj</li>
+      </ul>
+
+      <ul>
+        <li>prolemur_simus</li>
+      </ul>
+
+      <ul>
+        <li>pelusios_castaneus</li>
+      </ul>
+
+      <ul>
+        <li>oryzias_latipes_hsok</li>
+      </ul>
+
+      <ul>
+        <li>salmo_trutta</li>
+      </ul>
+
+      <ul>
+        <li>sphenodon_punctatus</li>
+      </ul>
+
+      <ul>
+        <li>sus_scrofa_jinhua</li>
+      </ul>
+
+      <ul>
+        <li>sorex_araneus</li>
+      </ul>
+
+      <ul>
+        <li>physeter_catodon</li>
+      </ul>
+
+      <ul>
+        <li>dicentrarchus_labrax</li>
+      </ul>
+
+      <ul>
+        <li>myripristis_murdjan</li>
+      </ul>
+
+      <ul>
+        <li>sus_scrofa_bamei</li>
+      </ul>
+
+      <ul>
+        <li>ursus_americanus</li>
+      </ul>
+
+      <ul>
+        <li>cyprinodon_variegatus</li>
+      </ul>
+
+      <ul>
+        <li>parus_major</li>
+      </ul>
+
+      <ul>
+        <li>ictidomys_tridecemlineatus</li>
+      </ul>
+
+      <ul>
+        <li>poecilia_latipinna</li>
+      </ul>
+
+      <ul>
+        <li>mus_musculus_balbcj</li>
+      </ul>
+
+      <ul>
+        <li>vombatus_ursinus</li>
+      </ul>
+
+      <ul>
+        <li>mus_musculus_wsbeij</li>
+      </ul>
+
+      <ul>
+        <li>accipiter_nisus</li>
+      </ul>
+
+      <ul>
+        <li>mus_musculus_129s1svimj</li>
+      </ul>
+
+      <ul>
+        <li>sinocyclocheilus_rhinocerous</li>
+      </ul>
+
+      <ul>
+        <li>meriones_unguiculatus</li>
+      </ul>
+
+      <ul>
+        <li>heterocephalus_glaber_male</li>
+      </ul>
+
+      <ul>
+        <li>salarias_fasciatus</li>
+      </ul>
+
+      <ul>
+        <li>corvus_moneduloides</li>
+      </ul>
+
+      <ul>
+        <li>neovison_vison</li>
+      </ul>
+
+      <ul>
+        <li>buteo_japonicus</li>
+      </ul>
+
+      <ul>
+        <li>crocodylus_porosus</li>
+      </ul>
+
+      <ul>
+        <li>pan_troglodytes</li>
+      </ul>
+
+      <ul>
+        <li>equus_caballus</li>
+      </ul>
+
+      <ul>
+        <li>podarcis_muralis</li>
+      </ul>
+
+      <ul>
+        <li>strigops_habroptila</li>
+      </ul>
+
+      <ul>
+        <li>chelonoidis_abingdonii</li>
+      </ul>
+
+      <ul>
+        <li>sus_scrofa_meishan</li>
+      </ul>
+
+      <ul>
+        <li>chrysolophus_pictus</li>
+      </ul>
+
+      <ul>
+        <li>bos_taurus_hybrid</li>
+      </ul>
+
+      <ul>
+        <li>mus_musculus_fvbnj</li>
+      </ul>
+
+      <ul>
+        <li>pelodiscus_sinensis</li>
+      </ul>
+
+      <ul>
+        <li>sparus_aurata</li>
+      </ul>
+
+      <ul>
+        <li>apteryx_rowi</li>
+      </ul>
+
+      <ul>
+        <li>kryptolebias_marmoratus</li>
+      </ul>
+
+      <ul>
+        <li>theropithecus_gelada</li>
+      </ul>
+
+      <ul>
+        <li>leptobrachium_leishanense</li>
+      </ul>
+
+      <ul>
+        <li>dipodomys_ordii</li>
+      </ul>
+
+      <ul>
+        <li>malurus_cyaneus_samueli</li>
+      </ul>
+
+      <ul>
+        <li>astyanax_mexicanus_pachon</li>
+      </ul>
+
+      <ul>
+        <li>mus_musculus_c57bl6nj</li>
+      </ul>
+
+      <ul>
+        <li>zonotrichia_albicollis</li>
+      </ul>
+
+      <ul>
+        <li>cyprinus_carpio_huanghe</li>
+      </ul>
+
+      <ul>
+        <li>equus_asinus_asinus</li>
+      </ul>
+
+      <ul>
+        <li>aquila_chrysaetos_chrysaetos</li>
+      </ul>
+
+      <ul>
+        <li>pygocentrus_nattereri</li>
+      </ul>
+
+      <ul>
+        <li>loxodonta_africana</li>
+      </ul>
+
+      <ul>
+        <li>sus_scrofa_berkshire</li>
+      </ul>
+
+      <ul>
+        <li>ailuropoda_melanoleuca</li>
+      </ul>
+
+      <ul>
+        <li>labrus_bergylta</li>
+      </ul>
+
+      <ul>
+        <li>sciurus_vulgaris</li>
+      </ul>
+
+      <ul>
+        <li>camelus_dromedarius</li>
+      </ul>
+
+      <ul>
+        <li>pan_paniscus</li>
+      </ul>
+
+      <ul>
+        <li>phasianus_colchicus</li>
+      </ul>
+
+      <ul>
+        <li>otolemur_garnettii</li>
+      </ul>
+
+      <ul>
+        <li>oreochromis_niloticus</li>
+      </ul>
+
+      <ul>
+        <li>cyprinus_carpio_germanmirror</li>
+      </ul>
+
+      <ul>
+        <li>amphiprion_percula</li>
+      </ul>
+
+      <ul>
+        <li>falco_tinnunculus</li>
+      </ul>
+
+      <ul>
+        <li>sus_scrofa_rongchang</li>
+      </ul>
+
+      <ul>
+        <li>latimeria_chalumnae</li>
+      </ul>
+
+      <ul>
+        <li>carassius_auratus</li>
+      </ul>
+
+      <ul>
+        <li>periophthalmus_magnuspinnatus</li>
+      </ul>
+
+      <ul>
+        <li>strix_occidentalis_caurina</li>
+      </ul>
+
+      <ul>
+        <li>poecilia_mexicana</li>
+      </ul>
+
+      <ul>
+        <li>macaca_fascicularis</li>
+      </ul>
+
+      <ul>
+        <li>bison_bison_bison</li>
+      </ul>
+
+      <ul>
+        <li>cervus_hanglu_yarkandensis</li>
+      </ul>
+
+      <ul>
+        <li>electrophorus_electricus</li>
+      </ul>
+
+      <ul>
+        <li>anabas_testudineus</li>
+      </ul>
+
+      <ul>
+        <li>oryctolagus_cuniculus</li>
+      </ul>
+
+      <ul>
+        <li>mus_musculus</li>
+      </ul>
+
+      <ul>
+        <li>nomascus_leucogenys</li>
+      </ul>
+
+      <ul>
+        <li>xiphophorus_couchianus</li>
+      </ul>
+
+      <ul>
+        <li>mus_musculus_nzohlltj</li>
+      </ul>
+
+      <ul>
+        <li>neogobius_melanostomus</li>
+      </ul>
+
+      <ul>
+        <li>amazona_collaria</li>
+      </ul>
+
+      <ul>
+        <li>notechis_scutatus</li>
+      </ul>
+
+      <ul>
+        <li>cricetulus_griseus_picr</li>
+      </ul>
+
+      <ul>
+        <li>ochotona_princeps</li>
+      </ul>
+
+      <ul>
+        <li>mus_musculus_dba2j</li>
+      </ul>
+
+      <ul>
+        <li>ictalurus_punctatus</li>
+      </ul>
+
+      <ul>
+        <li>oryzias_latipes_hni</li>
+      </ul>
+
+      <ul>
+        <li>danio_rerio</li>
+      </ul>
+
+      <ul>
+        <li>camarhynchus_parvulus</li>
+      </ul>
+
+      <ul>
+        <li>manacus_vitellinus</li>
+      </ul>
+
+      <ul>
+        <li>drosophila_melanogaster</li>
+      </ul>
+
+      <ul>
+        <li>nothoprocta_perdicaria</li>
+      </ul>
+
+      <ul>
+        <li>balaenoptera_musculus</li>
+      </ul>
+
+      <ul>
+        <li>acanthochromis_polyacanthus</li>
+      </ul>
+
+      <ul>
+        <li>chlorocebus_sabaeus</li>
+      </ul>
+
+      <ul>
+        <li>haplochromis_burtoni</li>
+      </ul>
+
+      <ul>
+        <li>denticeps_clupeoides</li>
+      </ul>
+
+      <ul>
+        <li>panthera_pardus</li>
+      </ul>
+
+      <ul>
+        <li>tetraodon_nigroviridis</li>
+      </ul>
+
+      <ul>
+        <li>ovis_aries_rambouillet</li>
+      </ul>
+
+      <ul>
+        <li>fundulus_heteroclitus</li>
+      </ul>
+
+      <ul>
+        <li>sus_scrofa</li>
+      </ul>
+
+      <ul>
+        <li>varanus_komodoensis</li>
+      </ul>
+
+      <ul>
+        <li>seriola_dumerili</li>
+      </ul>
+
+</body>
+</html>
+Test 4:
+-Input : http://127.0.0.1:8080/karyotype?species_name=mouse
+-Output :
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Karyotype</title>
+</head>
+<body style="background-color: palegoldenrod">
+  <p> The name of the chromosomes are :</p>
+  <tbody>
+
+      <ul>
+        <li>1</li>
+      </ul>
+
+      <ul>
+        <li>2</li>
+      </ul>
+
+      <ul>
+        <li>3</li>
+      </ul>
+
+      <ul>
+        <li>4</li>
+      </ul>
+
+      <ul>
+        <li>5</li>
+      </ul>
+
+      <ul>
+        <li>6</li>
+      </ul>
+
+      <ul>
+        <li>7</li>
+      </ul>
+
+      <ul>
+        <li>8</li>
+      </ul>
+
+      <ul>
+        <li>9</li>
+      </ul>
+
+      <ul>
+        <li>10</li>
+      </ul>
+
+      <ul>
+        <li>11</li>
+      </ul>
+
+      <ul>
+        <li>12</li>
+      </ul>
+
+      <ul>
+        <li>13</li>
+      </ul>
+
+      <ul>
+        <li>14</li>
+      </ul>
+
+      <ul>
+        <li>15</li>
+      </ul>
+
+      <ul>
+        <li>16</li>
+      </ul>
+
+      <ul>
+        <li>17</li>
+      </ul>
+
+      <ul>
+        <li>18</li>
+      </ul>
+
+      <ul>
+        <li>19</li>
+      </ul>
+
+      <ul>
+        <li>X</li>
+      </ul>
+
+      <ul>
+        <li>Y</li>
+      </ul>
+
+      <ul>
+        <li>MT</li>
+      </ul>
+
+</body>
+</html>
+Test 5:
+-Input: http://127.0.0.1:8080/karyotype?species_name=frog
+-Output:
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ERROR</title>
+  </head>
+  <body style="background-color: red;">
+    <h1>ERROR</h1>
+    <p>Resource not available</p>
+    <a href="/">Main Page</a>
+  </body>
+</html>
+Test 6:
+-Input:http://127.0.0.1:8080/chromosomeLength?species_name=mouse&chromosome_name=8
+-Output :
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chromosome length</title>
+</head>
+<body style="background-color: lightgreen">
+    <p> The length of the chromosomes is : 130127694</p>
+</body>
+</html>
+Test 7:
+-Input : http://127.0.0.1:8080/chromosomeLength?species_name=frog&chromosome_name=8
+-Output :
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ERROR</title>
+  </head>
+  <body style="background-color: red;">
+    <h1>ERROR</h1>
+    <p>Resource not available</p>
+    <a href="/">Main Page</a>
+  </body>
+</html>
+Test 8:
+-Input: http://localhost:8080/chromosomeLength?species_name=ovis_aries&chromosome_name=1
+-Output:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chromosome length</title>
+</head>
+<body style="background-color: lightgreen">
+    <p> The length of the chromosomes is : 275612895</p>
+</body>
+</html>
+Test 9:
+-Input: view-source:http://localhost:8080/chromosomeLength?species_name=homo_sapiens&chromosome_name=9
+-Output:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chromosome length</title>
+</head>
+<body style="background-color: lightgreen">
+    <p> The length of the chromosomes is : 138394717</p>
+</body>
+</html>
